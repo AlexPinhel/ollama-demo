@@ -5,4 +5,5 @@ from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 llm = Ollama(model="llama2", 
              callback_manager = CallbackManager([StreamingStdOutCallbackHandler()]))
 
-llm("Tell me about the history of AI")
+ask = input("Que voulez-vous demander au chatbot?")
+llm(ask)
