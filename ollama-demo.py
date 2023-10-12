@@ -6,4 +6,8 @@ llm = Ollama(model="llama2",
              callback_manager = CallbackManager([StreamingStdOutCallbackHandler()]))
 
 ask = input("Que voulez-vous demander au chatbot?")
+
+#import sys
+#ask = sys.argv[1]
+
 llm(ask)
